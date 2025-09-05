@@ -36,14 +36,15 @@ const questions = [
     hint: '💡 Hint: 4-stroke engine cycle.'
   },
   {
-    branch: 'Civil',
-    branchName: 'Civil',
-    branchIcon: 'fas fa-building',
-    title: 'Civil Question:',
-    question: '"I am a structural analysis method using virtual work principles to determine deflections. What am I?"',
-    answer: 'castigliano',
-    hint: '💡 Hint: Named after an Italian engineer.'
-  },
+  branch: 'Civil',
+  branchName: 'Civil',
+  branchIcon: 'fas fa-building',
+  title: 'Civil Question:',
+  question: '"I am the line of action through which the total load on a footing is assumed to act. What am I?"',
+  answer: 'centroid',
+  hint: '💡 Hint: Also called the center of gravity.'
+}
+,
   {
     branch: 'DSAI',
     branchName: 'Data Science & AI',
