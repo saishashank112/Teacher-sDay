@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #6a11cb);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.quiz-container {
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.05));
+  padding: 30px;
+  border-radius: 20px;
+  width: 650px;
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(0,255,255,0.3);
+  backdrop-filter: blur(12px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00f260, #0575e6, #ff6ec7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.question-card {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1f1c2c, #3a1c71, #2a0845);
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.question-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  margin-top: 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-image: linear-gradient(90deg, #42e695, #ff6ec7) 1;
+  box-shadow: 0 0 15px #42e695, 0 0 25px #ff6ec7;
+}
+
+button {
+  margin: 12px 8px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0575e6, #00f260);
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff6ec7, #42e695);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#hintBox {
+  margin-top: 12px;
+  color: #ffea00;
+  font-style: italic;
+}

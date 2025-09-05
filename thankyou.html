@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="thankyou.css">
+  <style>
+    body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.thankyou-card {
+  background: linear-gradient(135deg, #1a0033, #001f4d, #002b36);
+  background-size: 300% 300%;
+  animation: gradientFlow 10s ease infinite;
+  padding: 40px;
+  border-radius: 20px;
+  width: 650px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 110, 199, 0.3),
+              0 0 50px rgba(120, 115, 245, 0.2),
+              0 0 80px rgba(66, 230, 149, 0.15);
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  background: radial-gradient(circle, #ff6ec7, #ff3d3d, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ff6ec7, #42e695, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #42e695;
+}
+
+  </style>
+</head>
+<body>
+  <div class="thankyou-card">
+    <div class="icon">❤️</div>
+    <h1>Thank You</h1>
+    <p>For every breakthrough you’ve inspired</p>
+    <p>For every challenge you’ve guided us through</p>
+    <p>For every innovation you’ve nurtured</p>
+    <p>For being the architects of our engineering dreams</p>
+    <h2>Happy Teachers' Day 2025 🎉</h2>
+    <p class="footer">May your brilliance continue to illuminate the path of knowledge</p>
+  </div>
+</body>
+</html>
